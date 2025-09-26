@@ -13,6 +13,10 @@ html {
     color:#21004d;
 }
 
+.landing body {
+    padding: 0 2rem;
+}
+
 .landing header img {
     padding: 2rem 1rem 1rem;
 }
