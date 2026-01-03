@@ -1,14 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    color: #21004d;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    text-size-adjust: none;
+}
+
+ul {
+    padding:0;
 }
 
 .landing {
-    /* background-image: linear-gradient(to bottom right, #21004d, #950ea0); */
-    /* color: #fff; */
     background-color: rgba(33, 0, 77, 0.1);
     color:#21004d;
 }
@@ -25,11 +39,11 @@ html {
     padding: 2rem;
 }
 
-.landing ul {
+.landing ul, header ul, #testimonials ul, #resources ul, #support ul, #stats ul, footer ul {
     display: inline-flex;
 }
 
-.landing li {
+.landing li, header li, #testimonials li, #resources li, #support li, #stats li, footer li {
     list-style: none;
     margin: 0 .5rem;
 }
@@ -42,13 +56,13 @@ html {
     font-weight: 400;
 }
 
-.landing a {
-    font-weight: 800;
+.landing a, header a, #join-us a, #social a {
+    font-weight: 700;
     color: #950EA0;
     text-decoration: none;
 }
 
-.landing a:hover {
+.landing a:hover, #calendar a:hover, #social a:hover, #resources a:hover {
     text-decoration: underline;
 }
 
@@ -68,6 +82,300 @@ html {
     color: #fff;
 }
 
+.bg-purple-gradient {
+    background-image: linear-gradient(to right, #21004d, #950ea0);
+    color: #fff;
+}
+
 .yellow {
-    background-color: #e59b02;
+    background-color: rgb(229, 155, 2);
+}
+
+button {
+    background: #950EA0;
+    color: #fff;
+    padding: .8em 1.5em;
+    border-radius: 8px;
+    border:0;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    transition: background-color 1s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #21004d;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    height: 72px;
+    background: #fff;
+    box-shadow: 4px 7px 9px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    z-index: 1;
+}
+
+header h1 {
+    /* font-size: 1.25em; */
+    display: inline-flex;
+    font-size: 1rem;
+    a {
+        display: flex;
+        align-items: center;
+    }
+}
+
+#menu {
+    font-size: 1.8em;
+    justify-content: start;
+    margin-left: 2rem;
+    width: calc((100% / 3) - 2rem);
+}
+
+#title {
+    justify-content: center;
+    width: calc(100% / 3);
+}
+
+#title img {
+    margin: 0 .5rem;
+}
+
+#title span {
+    display: contents;
+    font-weight: 800;
+    color: #21004d;
+}
+
+#header-jg {
+    justify-content: end;
+    width: calc((100% / 3) - 1rem);
+    margin-right: 1rem;
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    z-index:2;
+    box-shadow: 4px 7px 9px rgba(0, 0, 0, 0.1);
+}
+
+#menu,
+#title,
+#header-jg {
+    display: inline-flex;
+    height: 72px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    &:hover {
+        background-color: #950EA0;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+#close {
+    border-bottom:1px solid  rgba(33, 0, 77, 0.15);
+}
+
+
+nav li a {
+    display: block;
+    padding: 1em;
+    color: #950EA0;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 72px;
+}
+
+#nav {
+    display: block;
+    z-index: 2;
+    width: 40%;
+    min-width: 300px;
+    height: 100%;
+    background: white;
+    text-align: left;
+    animation: animateleft 0.4s;
+}
+
+section {
+    padding: 1rem 2rem;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin:auto !important;
+}
+
+#banner {
+    text-align: left;
+}
+
+#banner h2 {
+    font-weight: 400;
+}
+
+#get-involved h2 {
+    margin-top: .5rem;
+}
+
+#get-involved p {
+    margin-top:0;
+}
+
+#get-involved a {
+    color:rgb(229, 155, 2);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#get-involved a:hover {
+    text-decoration: underline;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+}
+
+#logo, #socials, #jg {
+    width: calc(100%/3);
+}
+
+#footer-notice {
+    background-color: rgba(229, 155, 2, 1);;
+    padding: 1rem;
+    display: inline-flex;
+    width: 100%;
+    p {
+        margin:.5rem 0;
+        width: 50%;
+    }
+}
+
+#copy {
+    text-align:left;
+}
+
+#reg {
+    text-align: right;
+}
+
+#yd {
+    background: rgba(33, 0, 77, 0.15);
+    padding: .5rem 1rem;
+    p {
+        margin:0;
+        font-size: .7rem;
+        text-align: left;
+        font-weight: 500;
+    }
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #950EA0;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.mailing {
+    background: rgba(33, 0, 77, 0.15);
+    width: calc(100% - 2rem);
+    border-radius: 8px;
+    margin: 1rem 1rem 0;
+    h4 {
+        font-size: 1.3rem;
+        margin:0;
+        padding: 1.5rem 0 1rem;
+    }
+}
+
+
+#mc_embed_shell {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 0 1rem;
+}
+
+#mc_embed_signup .button {
+    background: #950EA0 !important;
+    font-weight: 600 !important;
+    transition: background-color 1s ease-in-out !important;
+}
+
+#mc_embed_signup .button:hover {
+    background: #21004d !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    padding-bottom: 8px !important;
+}
+
+/* Use a media query to add a breakpoint at 400px: */
+@media screen and (max-width: 400px) {
+    #footer-notice {
+        display: block;
+    }
+    #footer-notice p {
+        width: 100%;
+        text-align: center;
+    }
+    #yd p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    /* section {
+        padding: 1rem;
+    } */
+    #banner a, #help a, #get-involved a {
+        line-break: normal !important;
+    }
+    #footer-links {
+        display: block;
+    }
+    #logo, #socials, #jg {
+        width: 100%;
+    }
+    #jg a {
+        margin: auto;
+    }
+    .mailing {
+        margin: 1rem;
+    }
+}
+
+@keyframes animateleft {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+    
+    100% {
+        left: 0;
+        opacity: 1;
+    }
 }
