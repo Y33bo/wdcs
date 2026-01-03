@@ -94,7 +94,7 @@ ul {
 button {
     background: #950EA0;
     color: #fff;
-    padding: .8em 1.5em;
+    padding: .8rem 1.5rem;
     border-radius: 8px;
     border:0;
     font-weight: 600;
@@ -348,9 +348,12 @@ section {
 }
 
 @media (max-width: 600px) {
-    /* section {
-        padding: 1rem;
-    } */
+    header h1 {
+        font-size: .7rem;
+    }
+    #header-jg button {
+        padding: .8rem 1rem;
+    }
     #banner a, #help a, #get-involved a {
         line-break: normal !important;
     }
