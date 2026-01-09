@@ -1,0 +1,51 @@
+#resource-page section {
+    background-color: #fff;
+    color: #21004d;
+    text-align: left;
+}
+
+#banner a,
+#resource-page section a,
+#help a {
+    font-weight: 700;
+    color:#950EA0;
+    text-decoration: none;
+    line-break: anywhere;
+}
+
+#banner a:hover,
+#resource-page section a:hover,
+#help a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background: rgba(33, 0, 77, 0.15);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-bottom: .8rem;
+}
+
+.card ul {
+    padding-left: 1.2rem;
+}
+
+.card h4 {
+    margin-top: .8rem;
+}
+
+#audio {
+    padding-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+  }
+  section h3 {
+    margin-top: 0;
+  }
+  #help {
+    padding-bottom: 0;
+  }
+}

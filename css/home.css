@@ -1,0 +1,149 @@
+#banner,
+#calendar,
+#stats {
+    padding:0;
+}
+
+.home-banner {
+    background: url("../images/homepage-banner.png") no-repeat center;
+    background-size: auto 445px;
+    background-position: right;
+}
+
+.home-container {
+    display: flex;
+}
+
+.home-copy {
+    background-color: rgba(229, 155, 2, 0.82);
+    width: 50%;
+    text-align: left;
+    padding: 1em 2em 2em;
+    border-radius: 0 20px 20px 0;
+}
+
+.shape {
+    width: 0;
+	height: 0;
+	border-left: 50px solid rgba(229, 155, 2, 0.82);
+	border-bottom: 300px solid transparent;
+
+}
+
+#join-us {
+    padding: 1em;
+}
+
+#resources, #testimonials {
+    padding: 2em;
+}
+
+#calendar a {
+    text-decoration: none;
+    color: #e59b02;
+}
+
+.calendar {
+    padding: 1em;
+}
+
+#testimonials {
+    background-color: rgb(229, 155, 2, 0.2);
+}
+
+#social {
+    display: none;
+}
+
+#resources {
+    background-image: linear-gradient(to left, #21004d, #950ea0);
+}
+
+#resources li {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1em 1.5em 1.5em;
+    box-shadow: 4px 20px 9px rgba(0, 0, 0, 0.25);
+    color: #21004d;
+    text-align: left;
+}
+
+#resources a {
+    color: #21004d;
+    text-decoration: none;
+}
+
+#resources li:hover {
+    box-shadow: 4px 20px 9px rgba(0, 0, 0, 0.5);
+    transition: linear 1s;
+}
+
+#resources span {
+    color:#950EA0;
+    font-weight: 600;
+    font-size: .8em;
+}
+
+#resources .view-all {
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+}
+
+#support {
+    background-image: url("../images/shapes-left.svg"), url("../images/shapes-right.svg");
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+#support li {
+    /* width: calc(100%/3); */
+    width: 50%;
+    max-width: 300px;
+}
+
+#support h4 {
+    color: #21004d;
+    background-color: #e59b02;
+    border-radius: 50%;
+    width: 113px;
+    height: 113px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2,
+#support p {
+    margin-top: 0;
+}
+
+#jg div {
+    display: inline-flex;
+}
+
+#ip p {
+    padding: 0 1em;
+}
+
+#stats h5 {
+    font-weight: 400;
+    margin-bottom: .8rem;
+}
+
+#stats h6 {
+    font-size: 2em;
+    margin: 0 auto 1rem;
+}
+
+@media (max-width: 600px) {
+    .home-copy {
+        border-radius: 0;
+        width: 100%;
+        display: block;
+    }
+    .home-banner {
+        background-image: none;
+    }
+}

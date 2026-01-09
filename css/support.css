@@ -1,0 +1,51 @@
+.support-row {
+    display: flex;
+}
+
+.support-row:first-of-type {
+    margin-bottom: 1rem !important;
+}
+
+.support-group {
+    width: calc(50% - .5rem);
+    margin-right: 1rem;
+    background: rgba(33, 0, 77, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    h3 {
+        margin-top: .5rem;
+    }
+}
+
+.support-group:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.support-group a {
+    font-weight: 700;
+    color:#950EA0;
+    text-decoration: none;
+}
+
+.support-group a:hover {
+    text-decoration: underline;
+}
+
+.alt {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.alt-yellow {
+    background: rgba(229, 155, 2, 0.5);
+}
+
+@media (max-width: 600px) {
+    .support-row {
+        display: block;
+    }
+    .support-group {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
