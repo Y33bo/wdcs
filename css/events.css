@@ -23,6 +23,14 @@
         max-width: 700px;
         margin: 1rem auto;
     }
+    a {
+        text-decoration: none;
+        color: #950EA0;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .event-item {
