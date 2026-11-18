@@ -70,3 +70,21 @@
     border-radius: 8px;
   }
 }
+
+.panto-event {
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    a {
+        text-decoration: none;
+        color: #950EA0;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
